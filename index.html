@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+    <style>
+      .font-manrope{
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  <!-- font awsome cdn -->
+<script src="https://kit.fontawesome.com/ed09295a18.js" crossorigin="anonymous"></script>
+ <!-- DaisyUi +tailwind CDN -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- tailwind cdn -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#ABEF5F',
+          'primary-color':"#ABEF5F"
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="font-manrope bg-gray-50 ">
+
+<!-- header start here -->
+<div class="navbar">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+    </div>
+    <!-- logo text -->
+    <div class="flex items-center">
+      <button class="bg-transparent px-5 py-3 rounded-lg text-4xl font-bold navbar-start flex items-center"> 
+          <i class="fa-solid fa-arrow-right -rotate-45 p-2 rounded-full bg-primary-color"></i> 
+          <span class="ml-2">Rinterio</span>
+      </button>  
+    </div>
+  </div>
+<!-- menu -->
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-xl">
+      <li><a>Home</a></li>
+      <li><a>Services</a></li>
+      <li><a>Portfolio</a></li>
+      <li><a>Blogs</a></li>
+      <li><a>Contact Us</a></li> 
+    </ul>
+  </div>
+<!-- icons -->
+  <div class="navbar-end gap-5 text-xl hidden md:flex">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <!-- button -->
+    <a class="btn bg-primary-color text-xl rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 p-2 rounded-full bg-black text-white"></i></a>
+  </div>
+</div>
+
+<main >
+<!-- banner starts here -->
+<div class="hero  min-h-screen">
+  <div class="hero-content text-center">
+    <div class="max-w-screen-lg ">
+      <!-- image -->
+      <img class="mx-auto" src="assets/banner.png" alt="">
+      <!-- banner content -->
+      <h1 class=" md:text-2xl lg:text-4xl font-bold">Discover Modern Barn House Designs<br> that Blend Tradition with Innovation</h1>
+      <p class="py-6 ">
+        Our designs bring together the warmth of rustic charm and the sleek lines of contemporary <br>architecture, creating homes that are both cozy and cutting-edge.
+      </p>
+      <!-- button -->
+      <a class="btn bg-primary-color text-xl bg-opacity-70	 rounded-3xl border-1 border-primary-color">View Details <i class="fa-solid fa-arrow-right -rotate-45 p-2 rounded-full bg-primary-color text-black"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- 2nd section Liveable spaces -->
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-1 flex-col lg:flex-row-reverse">
+    <!-- main image -->
+    <img
+      src="assets/Rectangle.png"
+      class="rounded-lg shadow-2xl" />
+
+      <!-- content -->
+    <div class="">
+      <p class="font-bold"> <i class="fa-solid fa-arrow-right p-2 text-black"></i>View Details </p>
+      <h1 class="text-5xl font-bold">We design thoughtful,<br> liveable spaces</h1>
+      <p class="py-6">
+        At Rinterio, we specialize in crafting unique living environments that reflect the personality and lifestyle of each client. With a focus on sustainability, aesthetic appeal, and functionality, our designs are more than just buildings—they’re homes, tailored to your needs.
+      </p>
+
+      <!-- commercial -->
+      <div class="md:flex md:flex-row lg:flex-col">
+        <!-- Commercial Section -->
+        <div class="hero-content bg-white mt-9 p-5 pr-16 rounded-xl md:flex-row mr-7">
+          <img
+            src="assets/commercial.png"
+            class="max-w-sm rounded-lg shadow-2xl w-full md:w-1/4" />
+          <div class="mt-6 md:mt-0 md:ml-6">
+            <h1 class="text-xl font-bold">Commercial</h1>
+            <p class="py-6">
+              Transform your business with our innovative commercial design solutions.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Residential Section -->
+        <div class="hero-content bg-white mt-9 p-5 pr-16 rounded-xl md:flex-row ">
+          <img
+            src="assets/residential.png"
+            class="max-w-sm rounded-lg shadow-2xl w-full md:w-1/4" />
+          <div class="mt-6 md:mt-0 md:ml-6">
+            <h1 class="text-xl font-bold">Residential</h1>
+            <p class="py-6">
+              From cozy cottages to expansive modern homes, our residential designs prioritize comfort. </p>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- clients count -->
+<div class="m-36 p-8 bg-white z-10 rounded-xl drop-shadow-md grid lg:grid-cols-4 gap-3 md:grid-cols-2 container mx-auto  ">
+  <!-- count 1 -->
+  <div class="stats">
+    <div class="stat place-items-center">
+      <i class="fa-regular fa-message text-5xl"></i>
+      <div class="stat-value">235+</div>
+      <div class="stat-desc text-base text-[#737373]">Happy Client Review</div>
+    </div>
+  </div>
+  <!-- count 2 -->
+  <div class="stats">
+    <div class="stat place-items-center">
+      <i class="fa-regular fa-building text-5xl"></i>
+      <div class="stat-value">50+</div>
+      <div class="stat-desc text-base text-[#737373]">Work Departments
+    </div>
+  </div>
+
+
+  </div>
+  <!-- count 3 -->
+  <div class="stats">
+    <div class="stat place-items-center">
+      <i class="fa-solid fa-people-roof text-5xl"></i>      
+      <div class="stat-value">30k+</div>
+      <div class="stat-desc text-base text-[#737373]">Our Happy Client
+    </div>
+  </div>
+
+
+  </div>
+  <!-- count 4 -->
+  <div class="stats">
+    <div class="stat place-items-center">
+      <i class="fa-solid fa-people-group text-5xl"></i>      
+      <div class="stat-value">307+</div>
+      <div class="stat-desc text-base text-[#737373]">Staff Members
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+
+</div>
+
+<!-- work process -->
+<div class="mb-20 container mx-auto ">
+ <!-- content -->
+<div class=" text-center ">
+  <p class="font-bold"> <i class="fa-solid fa-arrow-right p-2 text-black"></i>How we works</p>
+  <h1 class="text-4xl font-bold">Our Works Process</h1>
+  <p class="p-6">
+    At Rinterio, we specialize in crafting unique living environments that reflect the personality and lifestyle of each client.
+  </p>
+  </div>
+
+<!-- cards -->
+<div class="mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-6 justify-center">
+  <!-- card 1 -->
+  <div class="card bg-[#E7C1D3] text-primary-content w-80 text-black mx-auto ">
+    <div class="card-body">
+      <img class="w-10 h-auto font-bold" src="assets/concept.png" alt="">
+      <h2 class="card-title font-bold">Concept</h2>
+      <p>We start by understanding your vision and needs, creating initial concepts that align with your goals.
+      </p>
+    </div>
+  </div>
+  <!-- card 2 -->
+  <div class="card bg-[#EFDA6E] text-primary-content w-80 text-black mx-auto">
+    <div class="card-body">
+      <img class="w-10 h-auto font-bold" src="assets/flow-chart.png" alt="">
+      <h2 class="card-title font-bold">Design Process</h2>
+      <p>
+        Our team develops detailed designs, incorporating your feedback to refine and perfect every aspect      </p>
+    </div>
+  </div>
+  <!-- card 3 -->
+  <div class="card bg-[#A4DAC3] text-primary-content w-80 text-black mx-auto">
+    <div class="card-body">
+      <img class="w-10 h-auto font-bold" src="assets/vision.png" alt="">
+      <h2 class="card-title font-bold">Supervision</h2>
+      <p>
+        We oversee the entire construction process, ensuring that every detail is executed to the highest standard.      </p>
+    </div>
+  </div>
+  <!-- card 4 -->
+  <div class="card bg-[#77AAEA] text-primary-content w-80 text-black mx-auto">
+    <div class="card-body">
+      <img class="w-10 h-auto font-bold" src="assets/concept.png" alt="">
+      <h2 class="card-title font-bold">Budget Planning</h2>
+      <p>
+        We work within your budget, providing transparent cost estimates and managing expenses      </p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Conatct Form -->
+<div class="bg-[url('assets/bg.jpg')] bg-cover bg-center w-full p-10">
+  <!-- content -->
+<div class=" text-center ">
+  <p class="font-bold"> <i class="fa-solid fa-arrow-right p-2 text-black"></i>How we works</p>
+  <h1 class="text-4xl font-bold">Our Works Process</h1>
+  <p class="p-6">
+    At Rinterio, we specialize in crafting unique living environments that reflect the personality and lifestyle of each client.
+  </p>
+  </div>
+
+  <!-- form -->
+  <div class=" py-10">
+    <div class="max-w-6xl mx-auto p-6  rounded-lg ">
+
+<form class="space-y-6 ">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+                <div>
+                    <input 
+                        type="text" 
+                        placeholder="First Name*" 
+                        class=" w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-color"
+                    />
+                </div>
+                <div>
+                    <input 
+                        type="text" 
+                        placeholder="Last Name*" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-color"
+                    />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <input 
+                        type="tel" 
+                        placeholder="Phone Number*" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-color"
+                    />
+                </div>
+                <div>
+                    <input 
+                        type="email" 
+                        placeholder="Email*" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary-color"
+                    />
+                </div>
+            </div>
+            <div>
+                <textarea 
+                    placeholder="Write your message here" 
+                    class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-color"
+                    rows="5"
+                ></textarea>
+            </div>
+            <div class="text-center">
+                <button 
+                    type="submit" 
+                    class="bg-primary-color w-full  text-black font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out"
+                >
+                    Send Mail
+                    <i class="fa-solid fa-arrow-right -rotate-45 p-2 rounded-full bg-black text-primary-color"></i> 
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+  </main>
+  <!-- footer --> 
+  <footer class="footer footer-center bg-[#1C1C1C] text-white py-20 ">
+          <!-- logo text -->
+    <div class="flex items-center">
+      <button class="bg-transparent text-4xl font-bold navbar-start flex items-center"> 
+          <i class="fa-solid fa-arrow-right -rotate-45 p-2 rounded-full bg-primary-color text-black"></i> 
+          <span class="ml-2">Rinterio</span>
+      </button>  
+    </div>
+      <p class="text-[#737373] text-xl ">
+  With a focus on sustainability, aesthetic appeal, and functionality, <br> our designs are more than just buildings—they’re homes, tailored to your needs.
+</p>
+   
+<!-- menu -->
+<div class="navbar-center ">
+  <ul class="menu menu-horizontal text-xl">
+    <li><a>Home</a></li>
+    <li><a>Services</a></li>
+    <li><a>Portfolio</a></li>
+    <li><a>Blogs</a></li>
+    <li><a>Contact Us</a></li> 
+  </ul>
+</div>
+        <!-- button -->
+        <div class="text-xl  md:flex">
+          <!-- button -->
+          <a class="btn bg-primary-color text-xl rounded-3xl">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 p-2 rounded-full bg-black text-white"></i></a>
+        </div>
+      </div>
+      </footer>
+
+
+
+    </body>
+</html>
